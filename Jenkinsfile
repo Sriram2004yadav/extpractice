@@ -10,14 +10,14 @@ pipeline{
             steps{
                 bat """
                 mkdir out
-                javac -d out src\\hello\\HelloWorld.java
+                javac -d out src\\hello\\Hello.java
                 """
             }
         }
         stage('Run'){
             steps{
                 bat """
-                java -cp out hello.HelloWorld
+                java -cp out hello.Hello
                 echp Build_OK >artifact.txt
                 """
             }
