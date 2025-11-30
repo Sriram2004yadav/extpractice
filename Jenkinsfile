@@ -18,7 +18,7 @@ pipeline{
             steps{
                 bat """
                 java -cp out hello.Hello
-                echp Build_OK >artifact.txt
+                echo Build_OK >artifact.txt
                 """
             }
         }
