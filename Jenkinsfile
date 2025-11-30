@@ -6,7 +6,7 @@ pipeline{
                 checkout scm
             }
         }
-        stage(build){
+        stage('build'){
             steps{
                 bat """
                 mkdir out
@@ -14,7 +14,7 @@ pipeline{
                 """
             }
         }
-        stage(Run){
+        stage('Run'){
             steps{
                 bat """
                 java -cp out hello.HelloWorld
