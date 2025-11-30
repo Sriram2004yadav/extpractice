@@ -10,7 +10,7 @@ pipeline{
             steps{
                 bat """
                 mkdir out
-                javac -d out src\hello\HelloWorld.java
+                javac -d out src\\hello\\HelloWorld.java
                 """
             }
         }
